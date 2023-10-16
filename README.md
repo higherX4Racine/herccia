@@ -11,7 +11,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/herccia)](https://CRAN.R-project.org/package=herccia)
 <!-- badges: end -->
 
-Complete the data tasks for a StriveTogether Civic Infrastructure
+Perform the data tasks for a StriveTogether Civic Infrastructure
 Assessment
 
 ## Installation

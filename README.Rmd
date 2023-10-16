@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/herccia)](https://CRAN.R-project.org/package=herccia)
 <!-- badges: end -->
 
-Complete the data tasks for a StriveTogether Civic Infrastructure Assessment
+Perform the data tasks for a StriveTogether Civic Infrastructure Assessment
 
 ## Installation
 
