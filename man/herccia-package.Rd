@@ -4,9 +4,9 @@
 \name{herccia-package}
 \alias{herccia}
 \alias{herccia-package}
-\title{herccia: What the Package Does (One Line, Title Case)}
+\title{herccia: Utilities for creating Civic Infrastructure Assessment reports}
 \description{
-Perform the data tasks for a StriveTogether Civic Infrastructure Assessment
+Perform the data tasks for a StriveTogether Civic Infrastructure Assessment. Initially, this package focuses on public data from the US Census and Wisconsin's Department of Public Instruction, and internal data from Racine Unified School District.
 }
 \author{
 \strong{Maintainer}: Ben Taft \email{ben.taft@career2cradle.org}
