@@ -24,11 +24,16 @@ wrangle_hs_graduation <- function(.hs_data, .district = "4620") {
                                                ignore_case = TRUE))
         ) |>
         dplyr::count(
-            .data$SCHOOL_YEAR,
+            Year = .data$SCHOOL_YEAR,
             .data$Population,
             .data$Gender,
-            `Senior Class Size` = .data$COHORT_COUNT,
+            D = .data$COHORT_COUNT,
             wt = .data$STUDENT_COUNT,
-            name = "HS Completers"
+            name = "N"
+        ) |>
+        tidyr::pivot_longer(
+            cols = c("N", "D"),
+            names_to = "Role",
+            values_to = "Value"
         )
 }

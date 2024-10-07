@@ -142,3 +142,31 @@
 #' \item{WISEDash Local}{<chr> Racial and ethnic identities as they appear in WISEDash Local}
 #' }
 "STRIVE_TOGETHER_RACE_ETHNICITIES"
+
+#' Variables from the US Census to describe postsecondary completion by language spoken
+#' @format ## POSTSECONDARY_BY_LANGUAGE
+"POSTSECONDARY_BY_LANGUAGE"
+
+#' Variables from the US Census to describe postsecondary completion by poverty status
+#' @format ## POSTSECONDARY_BY_POVERTY
+"POSTSECONDARY_BY_POVERTY"
+
+#' Variables from the US Census to describe postsecondary completion by sex and race/ethnicity
+#' @format ## POSTSECONDARY_BY_SEX_AND_RACE
+"POSTSECONDARY_BY_SEX_AND_RACE"
+
+#' Values of education levels from the US Census to describe postsecondary completion
+#' @format ## POSTSECONDARY_EDUCATION_LEVELS
+"POSTSECONDARY_EDUCATION_LEVELS"
+
+#' Mapping from Census demographic categories to StriveTogether ones
+#' @format ## CENSUS_POPULATIONS
+"CENSUS_POPULATIONS"
+
+#' Mapping from Census income brackets to dollar values
+#' @format ## INCOME_BRACKETS
+"INCOME_BRACKETS"
+
+#' Mapping from IPEDS populations to StriveTogether ones
+#' @format ## IPEDS_POPULATIONS
+"IPEDS_POPULATIONS"

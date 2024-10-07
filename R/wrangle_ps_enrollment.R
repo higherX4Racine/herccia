@@ -21,11 +21,16 @@ wrangle_ps_enrollment <- function(.ps_data, .district = "4620") {
             is.na(.data$SCHOOL_CODE)
         ) |>
         dplyr::count(
-            .data$SCHOOL_YEAR,
+            Year = .data$SCHOOL_YEAR,
             .data$Population,
             .data$Gender,
-            `Postsecondary Enrollees` = .data$GROUP_COUNT,
+            D = .data$GROUP_COUNT,
             wt = .data$STUDENT_COUNT,
-            name = "First-fall Enrollees"
+            name = "N"
+        ) |>
+        tidyr::pivot_longer(
+            cols = c("N", "D"),
+            names_to = "Role",
+            values_to = "Value"
         )
 }

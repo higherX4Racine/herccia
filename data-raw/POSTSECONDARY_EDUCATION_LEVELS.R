@@ -1,0 +1,33 @@
+POSTSECONDARY_EDUCATION_LEVELS <- tibble::tribble(
+    ~ Order, ~ Education,                                    ~ Enrolled, ~ Completed,
+     0,      "",                                             NA,         NA,
+     1,      "No schooling completed",                       FALSE,      FALSE,
+     2,      "Nursery to 4th grade",                         FALSE,      FALSE,
+     3,      "5th and 6th grade",                            FALSE,      FALSE,
+     4,      "7th and 8th grade",                            FALSE,      FALSE,
+     5,      "Less than 9th grade",                          FALSE,      FALSE,
+     6,      "9th grade",                                    FALSE,      FALSE,
+     7,      "10th grade",                                   FALSE,      FALSE,
+     8,      "11th grade",                                   FALSE,      FALSE,
+     9,      "12th grade, no diploma",                       FALSE,      FALSE,
+    10,      "9th to 12th grade, no diploma",                FALSE,      FALSE,
+    11,      "Less than high school graduate",               FALSE,      FALSE,
+    12,      "Regular high school diploma",                  FALSE,      FALSE,
+    13,      "GED or alternative credential",                FALSE,      FALSE,
+    14,      "High school graduate, GED, or alternative",    FALSE,      FALSE,
+    15,      "High school graduate (includes equivalency)",  FALSE,      FALSE,
+    16,      "Some college, less than 1 year",               TRUE,       FALSE,
+    17,      "Some college, 1 or more years, no degree",     TRUE,       FALSE,
+    18,      "Some college, no degree",                      TRUE,       FALSE,
+    19,      "Associate's degree",                           TRUE,       TRUE,
+    20,      "Some college, associate's degree",             TRUE,       TRUE,
+    21,      "Bachelor's degree",                            TRUE,       TRUE,
+    22,      "Graduate degree",                              TRUE,       TRUE,
+    23,      "Master's degree",                              TRUE,       TRUE,
+    24,      "Professional school degree",                   TRUE,       TRUE,
+    25,      "Doctorate degree",                             TRUE,       TRUE,
+    26,      "Graduate or professional degree",              TRUE,       TRUE,
+    27,      "Bachelor's degree or higher",                  TRUE,       TRUE
+)
+
+usethis::use_data(POSTSECONDARY_EDUCATION_LEVELS, overwrite = TRUE)

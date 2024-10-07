@@ -17,6 +17,7 @@
 #' @importFrom readr col_character
 #' @importFrom readr col_integer
 #' @importFrom readr read_csv
+#' @importFrom readxl read_xlsx
 #' @importFrom rlang .data
 #' @importFrom rlang :=
 #' @importFrom rlang exec
