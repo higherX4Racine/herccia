@@ -31,9 +31,56 @@
     </div>
 
     <div class="section level2">
-      <h2 id="all-functions">All functions<a class="anchor" aria-label="anchor" href="#all-functions"></a></h2>
+      <h2 id="general-utilities-for-the-civic-infrastructure-assessment">General utilities for the Civic Infrastructure Assessment<a class="anchor" aria-label="anchor" href="#general-utilities-for-the-civic-infrastructure-assessment"></a></h2>
+
+      <div class="section-desc"><p>These functions and data tables are used for putting data into the CIA format, and for mapping labels from their origins’ terms to the terms used by StriveTogether.</p></div>
 
 
+    </div><div class="section level2">
+
+      <h3 id="glossaries">Glossaries<a class="anchor" aria-label="anchor" href="#glossaries"></a></h3>
+      <div class="section-desc"><p>Tables that map from one set of definitions to another.</p></div>
+
+
+    </div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="OUTPUT_POPULATIONS.html">OUTPUT_POPULATIONS</a></code>
+
+        </dt>
+        <dd>The literal row labels for different populations that StriveTogether wants</dd>
+      </dl><dl><dt>
+
+          <code><a href="IPEDS_POPULATIONS.html">IPEDS_POPULATIONS</a></code>
+
+        </dt>
+        <dd>Mapping from IPEDS populations to StriveTogether ones</dd>
+      </dl><dl><dt>
+
+          <code><a href="success_subtotals.html">success_subtotals()</a></code>
+
+        </dt>
+        <dd>Count up successes and failures based upon</dd>
+      </dl><dl><dt>
+
+          <code><a href="to_wide_cia_format.html">to_wide_cia_format()</a></code>
+
+        </dt>
+        <dd>Reformat a long data frame into the CIA format</dd>
+      </dl><dl><dt>
+
+          <code><a href="wrangle_local_postsecondary_completers.html">wrangle_local_postsecondary_completers()</a></code>
+
+        </dt>
+        <dd>Wrangle raw IPEDS graduation data for local schools into the local 150% postsecondary completion rate</dd>
+      </dl></div><div class="section level2">
+
+      <h3 id="census-variables">Census variables<a class="anchor" aria-label="anchor" href="#census-variables"></a></h3>
+      <div class="section-desc"><p>The American Community Survey contains information about post-secondary attainment and family-sustaining employment, in addition to general counts of populations.</p></div>
 
 
     </div><div class="section level2">
@@ -53,24 +100,6 @@
 
         </dt>
         <dd>Mapping from Census income brackets to dollar values</dd>
-      </dl><dl><dt>
-
-          <code><a href="IPEDS_POPULATIONS.html">IPEDS_POPULATIONS</a></code>
-
-        </dt>
-        <dd>Mapping from IPEDS populations to StriveTogether ones</dd>
-      </dl><dl><dt>
-
-          <code><a href="JOIN_PATTERNS_FOR_WISEDASH_LOCAL.html">JOIN_PATTERNS_FOR_WISEDASH_LOCAL</a></code>
-
-        </dt>
-        <dd>A lookup table for mapping demographic information from WISEDash Local to StriveTogether formats</dd>
-      </dl><dl><dt>
-
-          <code><a href="OUTPUT_POPULATIONS.html">OUTPUT_POPULATIONS</a></code>
-
-        </dt>
-        <dd>The literal row labels for different populations that StriveTogether wants</dd>
       </dl><dl><dt>
 
           <code><a href="POSTSECONDARY_BY_LANGUAGE.html">POSTSECONDARY_BY_LANGUAGE</a></code>
@@ -95,6 +124,29 @@
 
         </dt>
         <dd>Values of education levels from the US Census to describe postsecondary completion</dd>
+      </dl></div><div class="section level2">
+
+      <h3 id="wisconsin-specific-utilities">Wisconsin-specific utilities<a class="anchor" aria-label="anchor" href="#wisconsin-specific-utilities"></a></h3>
+      <div class="section-desc"><p>Definitions and algorithms for converting Wisconsin data into CIA format.</p></div>
+
+
+    </div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="STRIVE_TOGETHER_FORWARD.html">STRIVE_TOGETHER_FORWARD</a></code>
+
+        </dt>
+        <dd>Use this to semi-join Forward results and only get Strive-relevant data</dd>
+      </dl><dl><dt>
+
+          <code><a href="WISEDASH_POPULATIONS.html">WISEDASH_POPULATIONS</a></code>
+
+        </dt>
+        <dd>Mapping between WISEDash Public's "GROUP_BY_VALUE" and StriveTogether's "population."</dd>
       </dl><dl><dt>
 
           <code><a href="SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH.html">SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH</a></code>
@@ -109,16 +161,10 @@
         <dd>Column specification for data from WISEDash about student MAP percentile scores</dd>
       </dl><dl><dt>
 
-          <code><a href="STRIVE_TOGETHER_FORWARD.html">STRIVE_TOGETHER_FORWARD</a></code>
+          <code><a href="JOIN_PATTERNS_FOR_WISEDASH_LOCAL.html">JOIN_PATTERNS_FOR_WISEDASH_LOCAL</a></code>
 
         </dt>
-        <dd>Use this to semi-join Forward results and only get Strive-relevant data</dd>
-      </dl><dl><dt>
-
-          <code><a href="STRIVE_TOGETHER_POPULATIONS.html">STRIVE_TOGETHER_POPULATIONS</a></code>
-
-        </dt>
-        <dd>Mapping between race labels from source data to StriveTogether's terms</dd>
+        <dd>A lookup table for mapping demographic information from WISEDash Local to StriveTogether formats</dd>
       </dl><dl><dt>
 
           <code><a href="STRIVE_TOGETHER_RACE_ETHNICITIES.html">STRIVE_TOGETHER_RACE_ETHNICITIES</a></code>
@@ -127,10 +173,10 @@
         <dd>A lookup table for mapping from StriveTogether race/ethnicities to those used by the Census, WISEDash Public, and WISEDash Local</dd>
       </dl><dl><dt>
 
-          <code><a href="WISEDASH_POPULATIONS.html">WISEDASH_POPULATIONS</a></code>
+          <code><a href="STRIVE_TOGETHER_POPULATIONS.html">STRIVE_TOGETHER_POPULATIONS</a></code>
 
         </dt>
-        <dd>Mapping between WISEDash Public's "GROUP_BY_VALUE" and StriveTogether's "population."</dd>
+        <dd>Mapping between race labels from source data to StriveTogether's terms</dd>
       </dl><dl><dt>
 
           <code><a href="map_growth_for_k8.html">map_growth_for_k8()</a></code>
@@ -151,12 +197,6 @@
         <dd>Import data from WISEDash Local into a CIA-friendly format</dd>
       </dl><dl><dt>
 
-          <code><a href="success_subtotals.html">success_subtotals()</a></code>
-
-        </dt>
-        <dd>Count up successes and failures based upon</dd>
-      </dl><dl><dt>
-
           <code><a href="tabulate_map_growth.html">tabulate_map_growth()</a></code>
 
         </dt>
@@ -175,12 +215,6 @@
         <dd>Compute marginal totals for the CIA from student-level data from WISEDash Local</dd>
       </dl><dl><dt>
 
-          <code><a href="to_wide_cia_format.html">to_wide_cia_format()</a></code>
-
-        </dt>
-        <dd>Reformat a long data frame into the CIA format</dd>
-      </dl><dl><dt>
-
           <code><a href="wisedash_local_to_strive.html">wisedash_local_to_strive()</a></code>
 
         </dt>
@@ -191,14 +225,9 @@
 
         </dt>
         <dd>Wrangle WISEDash Public data into a format ready for the CIA</dd>
-      </dl><dl><dt>
-
-          <code><a href="wrangle_local_postsecondary_completers.html">wrangle_local_postsecondary_completers()</a></code>
-
-        </dt>
-        <dd>Wrangle raw IPEDS graduation data for local schools into the local 150% postsecondary completion rate</dd>
       </dl></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
