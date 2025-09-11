@@ -7,9 +7,13 @@
 \format{
 \subsection{OUTPUT_POPULATIONS}{
 
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 36 rows and 3 columns.
 \describe{
-\item{Gender}{either "All", "Male", or "Female}
-\item{Population}{some racial, ethnic, language-learner, and economic categories}
+\item{Gender}{\emph{<chr>} either "All", "Male", or "Female}
+\item{Population}{\emph{<chr>} some racial, ethnic, language-learner, and economic categories}
+\item{CIA Year}{\emph{<int>} which year that Strive requested this combination of Gender and Population}
 }
 }
 }

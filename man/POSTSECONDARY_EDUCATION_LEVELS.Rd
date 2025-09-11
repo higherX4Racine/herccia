@@ -6,6 +6,16 @@
 \title{Values of education levels from the US Census to describe postsecondary completion}
 \format{
 \subsection{POSTSECONDARY_EDUCATION_LEVELS}{
+
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 28 rows and 4 columns.
+\describe{
+\item{Order}{\emph{<num>} where the level occurs in the educational sequence}
+\item{Education}{\emph{<chr>} a human-readable description of the educational level}
+\item{Enrolled}{\emph{<lgl>} whether someone at this educational level should be considered as enrolled in postsecondary}
+\item{Completed}{\emph{<lgl>} whether someone at this educational level should be considered to have completed postsecondary}
+}
 }
 }
 \usage{

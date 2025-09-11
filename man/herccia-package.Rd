@@ -8,6 +8,13 @@
 \description{
 Perform the data tasks for a StriveTogether Civic Infrastructure Assessment. Initially, this package focuses on public data from the US Census and Wisconsin's Department of Public Instruction, and internal data from Racine Unified School District.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://higherx4racine.github.io/herccia/}
+}
+
+}
 \author{
 \strong{Maintainer}: Ben Taft \email{ben.taft@career2cradle.org}
 

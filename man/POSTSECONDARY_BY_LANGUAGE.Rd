@@ -6,6 +6,19 @@
 \title{Variables from the US Census to describe postsecondary completion by language spoken}
 \format{
 \subsection{POSTSECONDARY_BY_LANGUAGE}{
+
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 12 rows and 7 columns.
+\describe{
+\item{Group      }{\emph{<chr>} the ACS table of this variable }
+\item{Index      }{\emph{<int>} this variable's row in its ACS table}
+\item{Variable   }{\emph{<chr>} the full specification of this variable for querying the API}
+\item{Education  }{\emph{<chr>} the ACS vintage that this variable belongs to}
+\item{Employment }{\emph{<chr>} the labor force participation of people counted by this variable}
+\item{Language   }{\emph{<chr>} use of English by people counted by this variable}
+\item{Status     }{\emph{<chr>} the educational status of people counted by this variable}
+}
 }
 }
 \usage{
