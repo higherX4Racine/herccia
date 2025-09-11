@@ -7,3 +7,53 @@ repo:
     home: https://github.com/higherX4Racine/herccia
 
 destination: pkgdown/docs/
+
+reference:
+- title: General utilities for the Civic Infrastructure Assessment
+  desc: >
+    These functions and data tables are used for putting data into the CIA
+    format, and for mapping labels from their origins' terms to the terms used
+    by StriveTogether.
+
+- subtitle: Glossaries
+  desc: >
+    Tables that map from one set of definitions to another.
+  contents:
+  - OUTPUT_POPULATIONS
+  - IPEDS_POPULATIONS
+  - success_subtotals
+  - to_wide_cia_format
+  - wrangle_local_postsecondary_completers
+
+- subtitle: Census variables
+  desc: >
+    The American Community Survey contains information about post-secondary
+    attainment and family-sustaining employment, in addition to general counts
+    of populations.
+  contents:
+  - CENSUS_POPULATIONS
+  - INCOME_BRACKETS
+  - POSTSECONDARY_BY_LANGUAGE
+  - POSTSECONDARY_BY_POVERTY
+  - POSTSECONDARY_BY_SEX_AND_RACE
+  - POSTSECONDARY_EDUCATION_LEVELS
+
+- subtitle: Wisconsin-specific utilities
+  desc: >
+    Definitions and algorithms for converting Wisconsin data into CIA format.
+  contents:
+  - STRIVE_TOGETHER_FORWARD
+  - WISEDASH_POPULATIONS
+  - SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH
+  - SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES
+  - JOIN_PATTERNS_FOR_WISEDASH_LOCAL
+  - STRIVE_TOGETHER_RACE_ETHNICITIES
+  - STRIVE_TOGETHER_POPULATIONS
+  - map_growth_for_k8
+  - map_percentiles_for_kg
+  - read_wisedash_local
+  - tabulate_map_growth
+  - tabulate_map_percentile
+  - tabulate_wisedash_local
+  - wisedash_local_to_strive
+  - wisedash_public_to_strive
