@@ -7,11 +7,12 @@
 \format{
 \subsection{STRIVE_TOGETHER_RACE_ETHNICITIES}{
 
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 8 rows and 2 columns.
 \describe{
-\item{Strive}{\if{html}{\out{<fct>}} ordered population identities}
-\item{Census Race/Ethnicity}{\if{html}{\out{<chr>}} Census-defined racial and ethnic identities}
-\item{WISEDash Public}{\if{html}{\out{<chr>}} Racial and ethnic identities as they appear in WISEDash Public}
-\item{WISEDash Local}{\if{html}{\out{<chr>}} Racial and ethnic identities as they appear in WISEDash Local}
+\item{Strive}{\emph{<chr>} ordered population identities}
+\item{WISEDash Local}{\emph{<chr>} Racial and ethnic identities as they appear in WISEDash Local}
 }
 }
 }

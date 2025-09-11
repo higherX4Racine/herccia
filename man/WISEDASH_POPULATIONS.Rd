@@ -7,10 +7,13 @@
 \format{
 \subsection{WISEDASH_POPULATIONS}{
 
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 13 rows and 3 columns.
 \describe{
-\item{Population}{a demographic group label used in the Civic Infrastructure Assessment}
-\item{GROUP_BY_VALUE}{the value found in published WISEDash data}
-\item{Gender}{Either "All", "Female", or "Male"}
+\item{Population}{\emph{<chr>} a demographic group label used in the Civic Infrastructure Assessment}
+\item{GROUP_BY_VALUE}{\emph{<chr>} the value found in published WISEDash data}
+\item{Gender}{\emph{<chr>} Either "All", "Female", or "Male"}
 }
 }
 }

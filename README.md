@@ -12,7 +12,11 @@ status](https://www.r-pkg.org/badges/version/herccia)](https://CRAN.R-project.or
 <!-- badges: end -->
 
 Perform the data tasks for a StriveTogether Civic Infrastructure
-Assessment
+Assessment. Initially, this package focuses on public data from the [US
+Census](https://api.census.gov/data/2020/acs.html), Wisconsin’s
+[Department of Public
+Instruction](https://dpi.wi.gov/wisedash/download-files), and internal
+data from [Racine Unified School District](https://www.rusd.org).
 
 ## Installation
 
@@ -20,15 +24,6 @@ You can install the development version of herccia from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("higherX4Racine/herccia")
-```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(herccia)
-## basic example code
+# install.packages("pak")
+pak::pak("higherX4Racine/herccia")
 ```

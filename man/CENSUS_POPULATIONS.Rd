@@ -6,6 +6,14 @@
 \title{Mapping from Census demographic categories to StriveTogether ones}
 \format{
 \subsection{CENSUS_POPULATIONS}{
+
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 12 rows and 2 columns.
+\describe{
+\item{Category}{\emph{<chr>} one of the OMB categories used by IPEDS}
+\item{Population}{\emph{<chr>} one of the categories used by StriveTogether}
+}
 }
 }
 \usage{

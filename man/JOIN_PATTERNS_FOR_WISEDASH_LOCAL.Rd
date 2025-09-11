@@ -7,13 +7,16 @@
 \format{
 \subsection{JOIN_PATTERNS_FOR_WISEDASH_LOCAL}{
 
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 36 rows and 6 columns.
 \describe{
-\item{Gender}{\if{html}{\out{<chr>}} a StriveTogether gender identity}
-\item{Population}{\if{html}{\out{<chr>}} a StriveTogether race/ethnicity, language status, or economic status}
-\item{Gender Pattern}{a regular expression to match the correct genders for this gender-population combination}
-\item{Race Pattern}{a regular expression to match the correct races for this gender-population combination}
-\item{EL Pattern}{a regular expression to match the correct language status for this gender-population combination}
-\item{SES Pattern}{a regular expression to match the correct economic status for this gender-population combination}
+\item{Gender}{\emph{<chr>} a StriveTogether gender identity}
+\item{Population}{\emph{<chr>} a StriveTogether race/ethnicity, language status, or economic status}
+\item{Gender Pattern}{\emph{<chr>} a regular expression to match the correct genders for this gender-population combination}
+\item{Race Pattern}{\emph{<chr>} a regular expression to match the correct races for this gender-population combination}
+\item{EL Pattern}{\emph{<chr>} a regular expression to match the correct language status for this gender-population combination}
+\item{SES Pattern}{\emph{<chr>} a regular expression to match the correct economic status for this gender-population combination}
 }
 }
 }

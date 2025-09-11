@@ -1,0 +1,9 @@
+url: https://higherx4racine.github.io/herccia/
+template:
+  bootstrap: 5
+
+repo:
+  url:
+    home: https://github.com/higherX4Racine/herccia
+
+destination: pkgdown/docs/

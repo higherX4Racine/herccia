@@ -6,6 +6,16 @@
 \title{Mapping from IPEDS populations to StriveTogether ones}
 \format{
 \subsection{IPEDS_POPULATIONS}{
+
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 27 rows and 4 columns.
+\describe{
+\item{Sex}{\emph{<chr>} "all", "men", or "women", as per IPEDS}
+\item{Gender}{\emph{<chr>} "All", "Female", or "Male", as per StriveTogether}
+\item{Race/Ethnicity}{\emph{<chr>} one of the OMB categories used by IPEDS}
+\item{Population}{\emph{<chr>} one of the categories used by StriveTogether}
+}
 }
 }
 \usage{

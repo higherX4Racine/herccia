@@ -7,10 +7,14 @@
 \format{
 \subsection{STRIVE_TOGETHER_POPULATIONS}{
 
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 11 rows and 4 columns.
 \describe{
-\item{Strive}{a Race/Ethnicity label used in the Civic Infrastructure Assessment}
-\item{WISEDash Public}{Race/Ethniity labels used in published WISEDash data}
-\item{WISEDash Local}{Race/Ethnicity labels used in WISEDash Local reports}
+\item{Strive}{\emph{<chr>} a Race/Ethnicity label used in the Civic Infrastructure Assessment}
+\item{Census Race/Ethnicity}{\emph{<chr>} a Race/Ethnicity label used by the US Census}
+\item{WISEDash Public}{\emph{<chr>} Race/Ethniity labels used in published WISEDash data}
+\item{WISEDash Local}{\emph{<chr>} Race/Ethnicity labels used in WISEDash Local reports}
 }
 }
 }

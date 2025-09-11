@@ -6,6 +6,17 @@
 \title{Mapping from Census income brackets to dollar values}
 \format{
 \subsection{INCOME_BRACKETS}{
+
+An object of class \code{spec_tbl_df}
+(inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
+with 17 rows and 5 columns.
+\describe{
+\item{Group}{\emph{<chr>} the code for the bracket's ACS table}
+\item{Index}{\emph{<int>} the code for the bracket's row in an ACS table}
+\item{Variable}{\emph{<chr>} the bracket's full variable for querying the api}
+\item{Lower}{\emph{<int>} the lower end of the bracket in dollars per year}
+\item{Upper}{\emph{<int>} the lower end of the bracket in dollars per year}
+}
 }
 }
 \usage{

@@ -7,20 +7,21 @@
 \format{
 \subsection{SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES}{
 
+A list of 16 name-datatype pairs
 \describe{
-\item{Student ID}{\if{html}{\out{<int>}}}
-\item{Name}{\if{html}{\out{<chr>}}}
-\item{Status}{\if{html}{\out{<chr>}}}
-\item{Current School}{\if{html}{\out{<chr>}}}
-\item{Curr. Grade}{\if{html}{\out{<chr>}}}
-\item{Gender}{\if{html}{\out{<chr>}}}
-\item{Race/Ethnicity}{\if{html}{\out{<chr>}}}
-\item{EL}{\if{html}{\out{<chr>}}}
-\item{SPED}{\if{html}{\out{<chr>}}}
-\item{Percentile Score}{\if{html}{\out{<chr>}}}
-\item{Percentile}{\if{html}{\out{<dbl>}}}
-\item{Norm Lvl}{\if{html}{\out{<chr>}}}
-\item{School Year}{\if{html}{\out{<character>}}}
+\item{Student ID}{\emph{<int>}}
+\item{Name}{\emph{<chr>}}
+\item{Status}{\emph{<chr>}}
+\item{Current School}{\emph{<chr>}}
+\item{Curr. Grade}{\emph{<chr>}}
+\item{Gender}{\emph{<chr>}}
+\item{Race/Ethnicity}{\emph{<chr>}}
+\item{EL}{\emph{<chr>}}
+\item{SPED}{\emph{<chr>}}
+\item{Percentile Score}{\emph{<chr>}}
+\item{Percentile}{\emph{<dbl>}}
+\item{Norm Lvl}{\emph{<chr>}}
+\item{School Year}{\emph{<chr>}}
 }
 }
 }

@@ -7,20 +7,21 @@
 \format{
 \subsection{SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH}{
 
+A list of 13 name-datatype pairs
 \describe{
-\item{Student ID}{\if{html}{\out{<integer>}}}
-\item{Name}{\if{html}{\out{<character>}}}
-\item{Status}{\if{html}{\out{<character>}}}
-\item{Current School}{\if{html}{\out{<character>}}}
-\item{Curr. Grade}{\if{html}{\out{<character>}}}
-\item{Gender}{\if{html}{\out{<character>}}}
-\item{Race/Ethnicity}{\if{html}{\out{<character>}}}
-\item{EL}{\if{html}{\out{<character>}}}
-\item{SPED}{\if{html}{\out{<character>}}}
-\item{Test Growth Result}{\if{html}{\out{<character>}}}
-\item{Test Growth Period}{\if{html}{\out{<character>}}}
-\item{Year}{\if{html}{\out{<character>}}}
-\item{Test Growth Percentile}{\if{html}{\out{<double>}}}
+\item{Student ID}{\emph{<int>}}
+\item{Name}{\emph{<chr>}}
+\item{Status}{\emph{<chr>}}
+\item{Current School}{\emph{<chr>}}
+\item{Curr. Grade}{\emph{<chr>}}
+\item{Gender}{\emph{<chr>}}
+\item{Race/Ethnicity}{\emph{<chr>}}
+\item{EL}{\emph{<chr>}}
+\item{SPED}{\emph{<chr>}}
+\item{Test Growth Result}{\emph{<chr>}}
+\item{Test Growth Period}{\emph{<chr>}}
+\item{Year}{\emph{<chr>}}
+\item{Test Growth Percentile}{\emph{<dbl>}}
 }
 }
 }
