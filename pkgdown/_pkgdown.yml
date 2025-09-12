@@ -20,10 +20,8 @@ reference:
     Tables that map from one set of definitions to another.
   contents:
   - OUTPUT_POPULATIONS
-  - IPEDS_POPULATIONS
   - success_subtotals
   - to_wide_cia_format
-  - wrangle_local_postsecondary_completers
 
 - subtitle: Census variables
   desc: >
@@ -37,6 +35,15 @@ reference:
   - POSTSECONDARY_BY_POVERTY
   - POSTSECONDARY_BY_SEX_AND_RACE
   - POSTSECONDARY_EDUCATION_LEVELS
+
+- subtitle: IPEDS utilities
+  desc: >
+    The US Department of Education has an Integrated Postsecondary Education
+    Database System. These tools help with wrangling those data.
+  contents:
+  - IPEDS_POPULATIONS
+  - STRIVE_TOGETHER_IPEDS
+  - wrangle_local_postsecondary_completers
 
 - subtitle: Wisconsin-specific utilities
   desc: >

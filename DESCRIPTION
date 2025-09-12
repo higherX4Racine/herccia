@@ -12,8 +12,7 @@ Description: Perform the data tasks for a StriveTogether Civic Infrastructure
     Census and Wisconsin's Department of Public Instruction, and internal data
     from Racine Unified School District.
 License: MIT + file LICENSE
-Suggests: 
-    testthat (>= 3.0.0)
+URL: https://higherx4racine.github.io/herccia/
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -29,6 +28,12 @@ Imports:
     tidyselect
 Depends: 
     R (>= 4.1)
-LazyData: true
+Suggests: 
+    hercacstables (>= 0.1.0.1),
+    hercipeds (>= 0.0.0.9000),
+    testthat (>= 3.0.0)
+Remotes:  
+    higherX4Racine/hercipeds,
+    higherX4Racine/hercacstables
 Config/Needs/website: rmarkdown
-URL: https://higherx4racine.github.io/herccia/
+LazyData: true

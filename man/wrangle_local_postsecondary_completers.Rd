@@ -4,10 +4,10 @@
 \alias{wrangle_local_postsecondary_completers}
 \title{Wrangle raw IPEDS graduation data for local schools into the local 150\% postsecondary completion rate}
 \usage{
-wrangle_local_postsecondary_completers(.ipeds_grad_data, .unit_ids)
+wrangle_local_postsecondary_completers(.DATA, .unit_ids)
 }
 \arguments{
-\item{.ipeds_grad_data}{a data frame with GR data a la \code{\link[hercipeds:read_graduation_rates]{hercipeds::read_graduation_rates()}}}
+\item{.DATA}{a data frame with GR data a la \code{\link[hercipeds:read_graduation_rates]{hercipeds::read_graduation_rates()}}}
 
 \item{.unit_ids}{the UNITID codes for all of the local schools}
 }

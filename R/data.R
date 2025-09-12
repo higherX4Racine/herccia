@@ -218,3 +218,15 @@
 #'   \item{Population}{*&lt;chr&gt;* one of the categories used by StriveTogether}
 #' }
 "IPEDS_POPULATIONS"
+
+#' IPEDS fields for calculating 150% graduation counts
+#' @format ## STRIVE_TOGETHER_IPEDS
+#' An object of class `spec_tbl_df`
+#' (inherits from `tbl_df`, `tbl`, `data.frame`)
+#' with 2 rows and 3 columns.
+#'\describe{
+#'   \item{Status}{*&lt;chr&gt;* "Adjusted Cohort" "Completed"}
+#'   \item{Relative Time}{*&lt;chr&gt;* NA "<=150%"}
+#'   \item{Credential Earned}{*&lt;chr&gt;* NA "Any"}
+#' }
+"STRIVE_TOGETHER_IPEDS"
