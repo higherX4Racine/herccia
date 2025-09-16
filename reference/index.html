@@ -49,10 +49,16 @@
 
       <dl><dt>
 
-          <code><a href="OUTPUT_POPULATIONS.html">OUTPUT_POPULATIONS</a></code>
+          <code><a href="GLOSSARY_OF_POPS_FOR_CIA.html">GLOSSARY_OF_POPS_FOR_CIA</a></code>
 
         </dt>
         <dd>The literal row labels for different populations that StriveTogether wants</dd>
+      </dl><dl><dt>
+
+          <code><a href="GLOSSARY_OF_POPS_FOR_COMPS.html">GLOSSARY_OF_POPS_FOR_COMPS</a></code>
+
+        </dt>
+        <dd>Group population and gender classes into three comparsions for visualization</dd>
       </dl><dl><dt>
 
           <code><a href="success_subtotals.html">success_subtotals()</a></code>
@@ -78,7 +84,7 @@
 
       <dl><dt>
 
-          <code><a href="CENSUS_POPULATIONS.html">CENSUS_POPULATIONS</a></code>
+          <code><a href="GLOSSARY_OF_POPS_FOR_CENSUS.html">GLOSSARY_OF_POPS_FOR_CENSUS</a></code>
 
         </dt>
         <dd>Mapping from Census demographic categories to StriveTogether ones</dd>
@@ -125,13 +131,13 @@
 
       <dl><dt>
 
-          <code><a href="IPEDS_POPULATIONS.html">IPEDS_POPULATIONS</a></code>
+          <code><a href="GLOSSARY_OF_POPS_FOR_IPEDS.html">GLOSSARY_OF_POPS_FOR_IPEDS</a></code>
 
         </dt>
         <dd>Mapping from IPEDS populations to StriveTogether ones</dd>
       </dl><dl><dt>
 
-          <code><a href="STRIVE_TOGETHER_IPEDS.html">STRIVE_TOGETHER_IPEDS</a></code>
+          <code><a href="SEMI_JOINS_FOR_IPEDS.html">SEMI_JOINS_FOR_IPEDS</a></code>
 
         </dt>
         <dd>IPEDS fields for calculating 150% graduation counts</dd>
@@ -154,16 +160,40 @@
 
       <dl><dt>
 
-          <code><a href="STRIVE_TOGETHER_FORWARD.html">STRIVE_TOGETHER_FORWARD</a></code>
+          <code><a href="GLOSSARY_OF_POPS_FOR_WISEDASH.html">GLOSSARY_OF_POPS_FOR_WISEDASH</a></code>
+
+        </dt>
+        <dd>Mapping between WISEDash Public's "GROUP_BY_VALUE" and StriveTogether's "population."</dd>
+      </dl><dl><dt>
+
+          <code><a href="GLOSSARY_OF_POPS_FOR_WISEDASH_LOCAL.html">GLOSSARY_OF_POPS_FOR_WISEDASH_LOCAL</a></code>
+
+        </dt>
+        <dd>A mapping from WISEDash Local labels to StriveTogether ones.</dd>
+      </dl><dl><dt>
+
+          <code><a href="predicate_MAP_growth.html">predicate_MAP_growth()</a></code>
+
+        </dt>
+        <dd>Identify which students met or exceeded their MAP growth goals</dd>
+      </dl><dl><dt>
+
+          <code><a href="predicate_MAP_percentile.html">predicate_MAP_percentile()</a></code>
+
+        </dt>
+        <dd>Identify which students met or exceeded their MAP growth goals</dd>
+      </dl><dl><dt>
+
+          <code><a href="SEMI_JOINS_FOR_FORWARD.html">SEMI_JOINS_FOR_FORWARD</a></code>
 
         </dt>
         <dd>Use this to semi-join Forward results and only get Strive-relevant data</dd>
       </dl><dl><dt>
 
-          <code><a href="WISEDASH_POPULATIONS.html">WISEDASH_POPULATIONS</a></code>
+          <code><a href="SEMI_JOINS_FOR_WISEDASH_LOCAL.html">SEMI_JOINS_FOR_WISEDASH_LOCAL</a></code>
 
         </dt>
-        <dd>Mapping between WISEDash Public's "GROUP_BY_VALUE" and StriveTogether's "population."</dd>
+        <dd>A lookup table for mapping demographic information from WISEDash Local to StriveTogether formats</dd>
       </dl><dl><dt>
 
           <code><a href="SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH.html">SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH</a></code>
@@ -176,24 +206,6 @@
 
         </dt>
         <dd>Column specification for data from WISEDash about student MAP percentile scores</dd>
-      </dl><dl><dt>
-
-          <code><a href="JOIN_PATTERNS_FOR_WISEDASH_LOCAL.html">JOIN_PATTERNS_FOR_WISEDASH_LOCAL</a></code>
-
-        </dt>
-        <dd>A lookup table for mapping demographic information from WISEDash Local to StriveTogether formats</dd>
-      </dl><dl><dt>
-
-          <code><a href="STRIVE_TOGETHER_RACE_ETHNICITIES.html">STRIVE_TOGETHER_RACE_ETHNICITIES</a></code>
-
-        </dt>
-        <dd>A lookup table for mapping from StriveTogether race/ethnicities to those used by the Census, WISEDash Public, and WISEDash Local</dd>
-      </dl><dl><dt>
-
-          <code><a href="STRIVE_TOGETHER_POPULATIONS.html">STRIVE_TOGETHER_POPULATIONS</a></code>
-
-        </dt>
-        <dd>Mapping between race labels from source data to StriveTogether's terms</dd>
       </dl><dl><dt>
 
           <code><a href="map_growth_for_k8.html">map_growth_for_k8()</a></code>
@@ -214,24 +226,6 @@
         <dd>Import data from WISEDash Local into a CIA-friendly format</dd>
       </dl><dl><dt>
 
-          <code><a href="tabulate_map_growth.html">tabulate_map_growth()</a></code>
-
-        </dt>
-        <dd>Count how many students met MAP growth expectations, using custom groups</dd>
-      </dl><dl><dt>
-
-          <code><a href="tabulate_map_percentile.html">tabulate_map_percentile()</a></code>
-
-        </dt>
-        <dd>Count how many students met MAP percentile expectations, using custom groups</dd>
-      </dl><dl><dt>
-
-          <code><a href="tabulate_wisedash_local.html">tabulate_wisedash_local()</a></code>
-
-        </dt>
-        <dd>Compute marginal totals for the CIA from student-level data from WISEDash Local</dd>
-      </dl><dl><dt>
-
           <code><a href="wisedash_local_to_strive.html">wisedash_local_to_strive()</a></code>
 
         </dt>
@@ -242,6 +236,12 @@
 
         </dt>
         <dd>Wrangle WISEDash Public data into a format ready for the CIA</dd>
+      </dl><dl><dt>
+
+          <code><a href="wrangle_wisedash_local.html">wrangle_wisedash_local()</a></code>
+
+        </dt>
+        <dd>Wrangle data from WISEDash Local into a CIA-friendly format</dd>
       </dl></div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>
