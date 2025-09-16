@@ -1,12 +1,12 @@
 #' Reformat a long data frame into the CIA format
 #'
-#' @param .long_data some data with disaggregated outcomes in long format
+#' @param .long_data `<tbl>` with columns "Year", "Gender", "Population", "N", and "D".
 #' @param .year the year of the CIA
 #'
 #' @return a tibble with columns grouped by year, numerator, and denominator
 #' @export
 to_wide_cia_format <- function(.long_data, .year) {
-    herccia::OUTPUT_POPULATIONS |>
+    herccia::GLOSSARY_OF_POPS_FOR_CIA |>
         dplyr::filter(
             .data$`CIA Year` == .year
         ) |>
@@ -16,15 +16,11 @@ to_wide_cia_format <- function(.long_data, .year) {
         dplyr::left_join(
             .long_data |>
                 dplyr::mutate(
-                    Value = dplyr::if_else(.data$Value == 0, NA, .data$Value)
+                    dplyr::across(c("N", "D"),
+                                  \(.) dplyr::if_else(. == 0, NA, .))
                 ) |>
                 dplyr::arrange(
                     dplyr::desc(.data$Year)
-                ) |>
-                tidyr::pivot_wider(
-                    names_from = "Role",
-                    values_from = "Value",
-                    values_fill = NA
                 ) |>
                 tidyr::pivot_wider(
                     names_from = "Year",

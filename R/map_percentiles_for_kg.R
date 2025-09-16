@@ -30,7 +30,9 @@
 map_percentiles_for_kg <- function(.filepath, .standard) {
     .filepath |>
         read_wisedash_local(
-            .spec = herccia::SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES,
+            .spec = herccia::SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES
+        ) |>
+        wrangle_wisedash_local(
             .success_column = "Percentile",
             .pred = \(.pctile) .pctile >= .standard,
             "School Year"

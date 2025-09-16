@@ -9,19 +9,19 @@
 
 A list of 16 name-datatype pairs
 \describe{
-\item{Student ID}{\emph{<int>}}
-\item{Name}{\emph{<chr>}}
-\item{Status}{\emph{<chr>}}
-\item{Current School}{\emph{<chr>}}
-\item{Curr. Grade}{\emph{<chr>}}
-\item{Gender}{\emph{<chr>}}
-\item{Race/Ethnicity}{\emph{<chr>}}
-\item{EL}{\emph{<chr>}}
-\item{SPED}{\emph{<chr>}}
-\item{Percentile Score}{\emph{<chr>}}
-\item{Percentile}{\emph{<dbl>}}
-\item{Norm Lvl}{\emph{<chr>}}
-\item{School Year}{\emph{<chr>}}
+\item{Student ID}{\verb{<int>}}
+\item{Name}{\verb{<chr>}}
+\item{Status}{\verb{<chr>}}
+\item{Current School}{\verb{<chr>}}
+\item{Curr. Grade}{\verb{<chr>}}
+\item{Gender}{\verb{<chr>}}
+\item{Race/Ethnicity}{\verb{<chr>}}
+\item{EL}{\verb{<chr>}}
+\item{SPED}{\verb{<chr>}}
+\item{Percentile Score}{\verb{<chr>}}
+\item{Percentile}{\verb{<dbl>}}
+\item{Norm Lvl}{\verb{<chr>}}
+\item{School Year}{\verb{<chr>}}
 }
 }
 }

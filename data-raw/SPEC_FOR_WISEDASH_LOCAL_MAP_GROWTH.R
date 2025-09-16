@@ -1,19 +1,19 @@
-## code to prepare `SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH` dataset goes here
+## Copyright (C) 2025 by Higher Expectations for Racine County
 
 SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH <- list(
-    `Student ID` = readr::col_integer(),
-    Name = readr::col_character(),
-    Status = readr::col_character(),
-    `Current School` = readr::col_character(),
-    `Curr. Grade` = readr::col_character(),
-    Gender = readr::col_character(),
-    `Race/Ethnicity` = readr::col_character(),
-    EL = readr::col_character(),
-    SPED = readr::col_character(),
-    `Test Growth Result` = readr::col_character(),
-    `Test Growth Period` = readr::col_character(),
-    Year = readr::col_character(),
-    `Test Growth Percentile` = readr::col_integer()
+    `Student ID` = "i",
+    Name = "c",
+    Status = "c",
+    `Current School` = "c",
+    `Curr. Grade` = "c",
+    Gender = "c",
+    `Race/Ethnicity` = "c",
+    EL = "c",
+    SPED = "c",
+    `Test Growth Result` = "c",
+    `Test Growth Period` = "c",
+    Year = "c",
+    `Test Growth Percentile` = "i"
 )
 
 usethis::use_data(SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH, overwrite = TRUE)

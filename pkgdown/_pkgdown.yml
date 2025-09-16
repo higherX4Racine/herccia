@@ -19,7 +19,8 @@ reference:
   desc: >
     Tables that map from one set of definitions to another.
   contents:
-  - OUTPUT_POPULATIONS
+  - GLOSSARY_OF_POPS_FOR_CIA
+  - GLOSSARY_OF_POPS_FOR_COMPS
   - success_subtotals
   - to_wide_cia_format
 
@@ -29,7 +30,7 @@ reference:
     attainment and family-sustaining employment, in addition to general counts
     of populations.
   contents:
-  - CENSUS_POPULATIONS
+  - GLOSSARY_OF_POPS_FOR_CENSUS
   - INCOME_BRACKETS
   - POSTSECONDARY_BY_LANGUAGE
   - POSTSECONDARY_BY_POVERTY
@@ -41,26 +42,25 @@ reference:
     The US Department of Education has an Integrated Postsecondary Education
     Database System. These tools help with wrangling those data.
   contents:
-  - IPEDS_POPULATIONS
-  - STRIVE_TOGETHER_IPEDS
+  - GLOSSARY_OF_POPS_FOR_IPEDS
+  - SEMI_JOINS_FOR_IPEDS
   - wrangle_local_postsecondary_completers
 
 - subtitle: Wisconsin-specific utilities
   desc: >
     Definitions and algorithms for converting Wisconsin data into CIA format.
   contents:
-  - STRIVE_TOGETHER_FORWARD
-  - WISEDASH_POPULATIONS
+  - GLOSSARY_OF_POPS_FOR_WISEDASH
+  - GLOSSARY_OF_POPS_FOR_WISEDASH_LOCAL
+  - predicate_MAP_growth
+  - predicate_MAP_percentile
+  - SEMI_JOINS_FOR_FORWARD
+  - SEMI_JOINS_FOR_WISEDASH_LOCAL
   - SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH
   - SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES
-  - JOIN_PATTERNS_FOR_WISEDASH_LOCAL
-  - STRIVE_TOGETHER_RACE_ETHNICITIES
-  - STRIVE_TOGETHER_POPULATIONS
   - map_growth_for_k8
   - map_percentiles_for_kg
   - read_wisedash_local
-  - tabulate_map_growth
-  - tabulate_map_percentile
-  - tabulate_wisedash_local
   - wisedash_local_to_strive
   - wisedash_public_to_strive
+  - wrangle_wisedash_local

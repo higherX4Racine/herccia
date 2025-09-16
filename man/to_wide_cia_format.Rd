@@ -7,7 +7,7 @@
 to_wide_cia_format(.long_data, .year)
 }
 \arguments{
-\item{.long_data}{some data with disaggregated outcomes in long format}
+\item{.long_data}{\verb{<tbl>} with columns "Year", "Gender", "Population", "N", and "D".}
 
 \item{.year}{the year of the CIA}
 }

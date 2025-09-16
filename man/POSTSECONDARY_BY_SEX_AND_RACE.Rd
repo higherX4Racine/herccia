@@ -11,13 +11,13 @@ An object of class \code{spec_tbl_df}
 (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame})
 with 1428 rows and 7 columns.
 \describe{
-\item{Year       }{\emph{<int>} the ACS vintage that this variable belongs to}
-\item{Group      }{\emph{<chr>} the ACS table of this variable }
-\item{Index      }{\emph{<int>} this variable's row in its ACS table}
-\item{Variable   }{\emph{<chr>} the full specification of this variable for querying the API}
-\item{Sex        }{\emph{<chr>} the sex of people counted by this variable}
-\item{Status     }{\emph{<chr>} the educational status of people counted by this variable}
-\item{Census Race}{\emph{<chr>} the OMB race category of people counted by this variable}
+\item{Year       }{\verb{<int>} the ACS vintage that this variable belongs to}
+\item{Group      }{\verb{<chr>} the ACS table of this variable }
+\item{Index      }{\verb{<int>} this variable's row in its ACS table}
+\item{Variable   }{\verb{<chr>} the full specification of this variable for querying the API}
+\item{Sex        }{\verb{<chr>} the sex of people counted by this variable}
+\item{Status     }{\verb{<chr>} the educational status of people counted by this variable}
+\item{Census Race}{\verb{<chr>} the OMB race category of people counted by this variable}
 }
 }
 }
