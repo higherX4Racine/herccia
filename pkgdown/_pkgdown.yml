@@ -44,7 +44,7 @@ reference:
   contents:
   - GLOSSARY_OF_POPS_FOR_IPEDS
   - SEMI_JOINS_FOR_IPEDS
-  - wrangle_local_postsecondary_completers
+  - wrangle_ipeds_graduates
 
 - subtitle: Wisconsin-specific utilities
   desc: >

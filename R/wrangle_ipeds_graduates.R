@@ -19,10 +19,11 @@
 #' Wrangle raw IPEDS graduation data for local schools into the local 150% postsecondary completion rate
 #'
 #' @param .DATA a data frame with GR data a la [`hercipeds::read_graduates()`]
+#' @inheritDotParams dplyr::filter -.data
 #'
 #' @return a data frame ready for [`to_wide_cia_format()`]
 #' @export
-wrangle_local_postsecondary_completers <- function(.DATA) {
+wrangle_ipeds_graduates <- function(.DATA, ...) {
     .tmp <- dplyr::mutate(.DATA,
                           Index = dplyr::row_number())
 
@@ -46,7 +47,8 @@ wrangle_local_postsecondary_completers <- function(.DATA) {
             `Race/Ethnicity` = "Population"
         ) |>
         dplyr::inner_join(
-            herccia::GLOSSARY_OF_POPS_FOR_IPEDS
+            herccia::GLOSSARY_OF_POPS_FOR_IPEDS,
+            by = c("Race/Ethnicity", "Sex")
         ) |>
         dplyr::inner_join(
             .cohort,
@@ -61,7 +63,8 @@ wrangle_local_postsecondary_completers <- function(.DATA) {
             D = sum(.data$Cohort, na.rm = TRUE),
             .by = c("Year",
                     "Population",
-                    "Gender"
+                    "Gender",
+                    ...
             )
         )
 }
