@@ -24,21 +24,24 @@
 #' @return a data frame ready for [`to_wide_cia_format()`]
 #' @export
 wrangle_ipeds_graduates <- function(.DATA, ...) {
+
+    .COUNT_COLUMNS <- c("Cohort", "Completers")
+
     .tmp <- dplyr::mutate(.DATA,
                           Index = dplyr::row_number())
 
     .cohort <- .helper(.tmp,
-                       "Cohort",
+                       .COUNT_COLUMNS[1],
                        .data$Statistic == "Adjusted cohort")
 
     .completers <- .helper(.tmp,
-                           "Completers",
+                           .COUNT_COLUMNS[2],
                            .data$`Award Level` == "Any degree",
                            .data$`Time to Award` == "<=150%")
 
     .tmp |>
         dplyr::select(
-            !tidyselect::any_of(c("Cohort", "Completers"))
+            !tidyselect::any_of(.COUNT_COLUMNS)
         ) |>
         dplyr::filter(
             .data$`Award Sought` == "Any degree"
@@ -59,8 +62,8 @@ wrangle_ipeds_graduates <- function(.DATA, ...) {
             by = "Index"
         ) |>
         dplyr::summarize(
-            N = sum(.data$Completers, na.rm = TRUE),
-            D = sum(.data$Cohort, na.rm = TRUE),
+            dplyr::across(tidyselect::all_of(.COUNT_COLUMNS),
+                          \(.) sum(., na.rm = TRUE)),
             .by = c("Year",
                     "Population",
                     "Gender",

@@ -163,7 +163,7 @@
 #' with 2 rows and 3 columns
 #' \describe{
 #'   \item{TEST_GROUP}{`<chr>` "Forward"}
-#'   \item{GRADE_LEVEL}{`<int>` `3L` or `8L`}
+#'   \item{GRADE_LEVEL}{`<chr>` "3" or "8"}
 #'   \item{TEST_SUBJECT}{`<chr>` "ELA" for 3rd grade and "Mathematics" for 8th}
 #' }
 "SEMI_JOINS_FOR_FORWARD"

@@ -12,7 +12,7 @@ An object of class \code{spec_tbl_df}
 with 2 rows and 3 columns
 \describe{
 \item{TEST_GROUP}{\verb{<chr>} "Forward"}
-\item{GRADE_LEVEL}{\verb{<int>} \code{3L} or \code{8L}}
+\item{GRADE_LEVEL}{\verb{<chr>} "3" or "8"}
 \item{TEST_SUBJECT}{\verb{<chr>} "ELA" for 3rd grade and "Mathematics" for 8th}
 }
 }
