@@ -14,6 +14,8 @@ reference:
     These functions and data tables are used for putting data into the CIA
     format, and for mapping labels from their origins' terms to the terms used
     by StriveTogether.
+  contents:
+  - load_partnerships
 
 - subtitle: Glossaries
   desc: >
