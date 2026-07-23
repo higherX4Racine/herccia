@@ -1,0 +1,138 @@
+# herccia
+
+Perform the data tasks for a StriveTogether Civic Infrastructure
+Assessment. Initially, this package focuses on public data from the [US
+Census](https://api.census.gov/data/2020/acs.html), Wisconsin’s
+[Department of Public
+Instruction](https://dpi.wi.gov/wisedash/download-files), and internal
+data from [Racine Unified School District](https://www.rusd.org).
+
+## Installation
+
+You can install the development version of herccia from
+[GitHub](https://github.com/) with:
+
+``` r
+
+# install.packages("pak")
+pak::pak("higherX4Racine/herccia")
+```
+
+# Package index
+
+## General utilities for the Civic Infrastructure Assessment
+
+These functions and data tables are used for putting data into the CIA
+format, and for mapping labels from their origins’ terms to the terms
+used by StriveTogether.
+
+- [`load_partnerships()`](https://higherx4racine.github.io/herccia/reference/load_partnerships.md)
+  : Load JSON descriptions of StriveTogether partnerships
+
+### Glossaries
+
+Tables that map from one set of definitions to another.
+
+- [`GLOSSARY_OF_POPS_FOR_CIA`](https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_CIA.md)
+  : The literal row labels for different populations that StriveTogether
+  wants
+- [`GLOSSARY_OF_POPS_FOR_COMPS`](https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_COMPS.md)
+  : Group population and gender classes into three comparsions for
+  visualization
+- [`success_subtotals()`](https://higherx4racine.github.io/herccia/reference/success_subtotals.md)
+  : Count up successes and failures based upon
+- [`to_wide_cia_format()`](https://higherx4racine.github.io/herccia/reference/to_wide_cia_format.md)
+  : Reformat a long data frame into the CIA format
+
+### Census variables
+
+The American Community Survey contains information about post-secondary
+attainment and family-sustaining employment, in addition to general
+counts of populations.
+
+- [`GLOSSARY_OF_POPS_FOR_CENSUS`](https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_CENSUS.md)
+  : Mapping from Census demographic categories to StriveTogether ones
+- [`INCOME_BRACKETS`](https://higherx4racine.github.io/herccia/reference/INCOME_BRACKETS.md)
+  : Mapping from Census income brackets to dollar values
+- [`POSTSECONDARY_BY_LANGUAGE`](https://higherx4racine.github.io/herccia/reference/POSTSECONDARY_BY_LANGUAGE.md)
+  : Variables from the US Census to describe postsecondary completion by
+  language spoken
+- [`POSTSECONDARY_BY_POVERTY`](https://higherx4racine.github.io/herccia/reference/POSTSECONDARY_BY_POVERTY.md)
+  : Variables from the US Census to describe postsecondary completion by
+  poverty status
+- [`POSTSECONDARY_BY_SEX_AND_RACE`](https://higherx4racine.github.io/herccia/reference/POSTSECONDARY_BY_SEX_AND_RACE.md)
+  : Variables from the US Census to describe postsecondary completion by
+  sex and race/ethnicity
+- [`POSTSECONDARY_EDUCATION_LEVELS`](https://higherx4racine.github.io/herccia/reference/POSTSECONDARY_EDUCATION_LEVELS.md)
+  : Values of education levels from the US Census to describe
+  postsecondary completion
+
+### IPEDS utilities
+
+The US Department of Education has an Integrated Postsecondary Education
+Database System. These tools help with wrangling those data.
+
+- [`GLOSSARY_OF_POPS_FOR_IPEDS`](https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_IPEDS.md)
+  : Mapping from IPEDS populations to StriveTogether ones
+- [`SEMI_JOINS_FOR_IPEDS`](https://higherx4racine.github.io/herccia/reference/SEMI_JOINS_FOR_IPEDS.md)
+  : IPEDS fields for calculating 150% graduation counts
+- [`wrangle_ipeds_graduates()`](https://higherx4racine.github.io/herccia/reference/wrangle_ipeds_graduates.md)
+  : Wrangle raw IPEDS graduation data for local schools into the local
+  150% postsecondary completion rate
+
+### Wisconsin-specific utilities
+
+Definitions and algorithms for converting Wisconsin data into CIA
+format.
+
+- [`GLOSSARY_OF_POPS_FOR_WISEDASH`](https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_WISEDASH.md)
+  : Mapping between WISEDash Public's "GROUP_BY_VALUE" and
+  StriveTogether's "population."
+- [`GLOSSARY_OF_POPS_FOR_WISEDASH_LOCAL`](https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_WISEDASH_LOCAL.md)
+  : A mapping from WISEDash Local labels to StriveTogether ones.
+- [`predicate_MAP_growth()`](https://higherx4racine.github.io/herccia/reference/predicate_MAP_growth.md)
+  : Identify which students met or exceeded their MAP growth goals
+- [`predicate_MAP_percentile()`](https://higherx4racine.github.io/herccia/reference/predicate_MAP_percentile.md)
+  : Identify which students met or exceeded their MAP growth goals
+- [`SEMI_JOINS_FOR_FORWARD`](https://higherx4racine.github.io/herccia/reference/SEMI_JOINS_FOR_FORWARD.md)
+  : Use this to semi-join Forward results and only get Strive-relevant
+  data
+- [`SEMI_JOINS_FOR_WISEDASH_LOCAL`](https://higherx4racine.github.io/herccia/reference/SEMI_JOINS_FOR_WISEDASH_LOCAL.md)
+  : A lookup table for mapping demographic information from WISEDash
+  Local to StriveTogether formats
+- [`SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH`](https://higherx4racine.github.io/herccia/reference/SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH.md)
+  : Column specification for data from WISEDash about student growth in
+  MAP scores
+- [`SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES`](https://higherx4racine.github.io/herccia/reference/SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES.md)
+  : Column specification for data from WISEDash about student MAP
+  percentile scores
+- [`map_growth_for_k8()`](https://higherx4racine.github.io/herccia/reference/map_growth_for_k8.md)
+  : Import and wrangle WISEDash Local data about students' growth on MAP
+  reading
+- [`map_percentiles_for_kg()`](https://higherx4racine.github.io/herccia/reference/map_percentiles_for_kg.md)
+  : Import and wrangle WISEDash Local data about Kindergartners'
+  percentile scores on MAP reading
+- [`read_wisedash_local()`](https://higherx4racine.github.io/herccia/reference/read_wisedash_local.md)
+  : Import data from WISEDash Local into a CIA-friendly format
+- [`wisedash_local_to_strive()`](https://higherx4racine.github.io/herccia/reference/wisedash_local_to_strive.md)
+  : Compute marginal totals for the CIA from student-level data from
+  WISEDash Local
+- [`wisedash_public_to_strive()`](https://higherx4racine.github.io/herccia/reference/wisedash_public_to_strive.md)
+  : Wrangle WISEDash Public data into a format ready for the CIA
+- [`wrangle_wisedash_local()`](https://higherx4racine.github.io/herccia/reference/wrangle_wisedash_local.md)
+  : Wrangle data from WISEDash Local into a CIA-friendly format
+
+### Utilities for income and family-sustaining wages
+
+Definitions and algorithms for computing who is earning 300% or more of
+the Federal poverty level.
+
+- [`GLOSSARY_FOR_ACS_EMPLOYMENT`](https://higherx4racine.github.io/herccia/reference/GLOSSARY_FOR_ACS_EMPLOYMENT.md)
+  : Explain Census variables in terms of Sustainable Wage calculations
+- [`fetch_acs_employment()`](https://higherx4racine.github.io/herccia/reference/fetch_acs_employment.md)
+  : Pull one year of data about household income and populations by sex
+  and race
+- [`wrangle_acs_employment()`](https://higherx4racine.github.io/herccia/reference/wrangle_acs_employment.md)
+  : Estimate the number of people living in a household with a
+  family-sustaining income
+

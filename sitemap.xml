@@ -4,6 +4,7 @@
 <url><loc>https://higherx4racine.github.io/herccia/LICENSE.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/authors.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/index.html</loc></url>
+<url><loc>https://higherx4racine.github.io/herccia/reference/GLOSSARY_FOR_ACS_EMPLOYMENT.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_CENSUS.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_CIA.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/GLOSSARY_OF_POPS_FOR_COMPS.html</loc></url>
@@ -20,6 +21,7 @@
 <url><loc>https://higherx4racine.github.io/herccia/reference/SEMI_JOINS_FOR_WISEDASH_LOCAL.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/SPEC_FOR_WISEDASH_LOCAL_MAP_GROWTH.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES.html</loc></url>
+<url><loc>https://higherx4racine.github.io/herccia/reference/fetch_acs_employment.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/herccia-package.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/index.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/load_partnerships.html</loc></url>
@@ -32,6 +34,7 @@
 <url><loc>https://higherx4racine.github.io/herccia/reference/to_wide_cia_format.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/wisedash_local_to_strive.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/wisedash_public_to_strive.html</loc></url>
+<url><loc>https://higherx4racine.github.io/herccia/reference/wrangle_acs_employment.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/wrangle_ipeds_graduates.html</loc></url>
 <url><loc>https://higherx4racine.github.io/herccia/reference/wrangle_wisedash_local.html</loc></url>
 </urlset>
