@@ -13,7 +13,7 @@ wrangle_wisedash_local(.DATA, .success_column, .pred, ...)
 
 \item{.pred}{\verb{<fun>} a predicate function for determining success}
 
-\item{...}{\code{\link[rlang:dyn-dots]{dynamic-dots}} Any additional grouping columns (using \link[tidyselect:language]{tidyselect::select_helpers})}
+\item{...}{\code{\link[rlang:dyn-dots]{dynamic-dots}} Any additional grouping columns (using \link[tidyselect:select_helpers]{tidyselect::select_helpers})}
 }
 \value{
 a data frame with some WISEDash Local columns and some CIA columns

@@ -13,7 +13,7 @@ wisedash_local_to_strive(.DATA, .success_column, .pred, ...)
 
 \item{.pred}{\verb{<fun>} a predicate function for determining success}
 
-\item{...}{\code{\link[rlang:dyn-dots]{dynamic-dots}} Any additional grouping columns (using \link[tidyselect:language]{tidyselect::select_helpers})}
+\item{...}{\code{\link[rlang:dyn-dots]{dynamic-dots}} Any additional grouping columns (using \link[tidyselect:select_helpers]{tidyselect::select_helpers})}
 }
 \value{
 a data frame with columns that will help with pasting into the CIA

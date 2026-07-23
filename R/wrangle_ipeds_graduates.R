@@ -1,3 +1,5 @@
+## Copyright (C) 2025 by Higher Expectations for Racine County
+
 .helper <- function(.nested_data, .key, ...) {
     .nested_data |>
         dplyr::select(

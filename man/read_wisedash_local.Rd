@@ -9,7 +9,7 @@ read_wisedash_local(.files, .spec)
 \arguments{
 \item{.files}{\verb{<chr[]>} an array of paths to csv files that contain data from WISEDash Local}
 
-\item{.spec}{\verb{<chr[]>} a list of column specifications for \code{\link[readr:read_delim]{readr::read_csv()}}}
+\item{.spec}{\verb{<chr[]>} a list of column specifications for \code{\link[readr:read_csv]{readr::read_csv()}}}
 }
 \value{
 a data frame with columns defined by \code{.spec}

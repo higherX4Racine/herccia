@@ -66,3 +66,11 @@ reference:
   - wisedash_local_to_strive
   - wisedash_public_to_strive
   - wrangle_wisedash_local
+
+- subtitle: Utilities for income and family-sustaining wages
+  desc: >
+    Definitions and algorithms for computing who is earning 300% or more of the Federal poverty level.
+  contents:
+  - GLOSSARY_FOR_ACS_EMPLOYMENT
+  - fetch_acs_employment
+  - wrangle_acs_employment

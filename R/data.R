@@ -240,3 +240,16 @@
 #'   \item{School Year}{`<chr>`}
 #' }
 "SPEC_FOR_WISEDASH_LOCAL_MAP_PERCENTILES"
+
+#' Explain Census variables in terms of Sustainable Wage calculations
+#'
+#' @format ## GLOSSARY_FOR_ACS_EMPLOYMENT
+#' an object of class `tbl_df`, `tbl`, `data.frame`
+#' with 21 rows and 4 columns
+#' \describe{
+#'   \item{Group     }{`<chr>` the table that the data come from, e.g. B01001}
+#'   \item{Index     }{`<int>` the variable's row number in its table }
+#'   \item{Gender    }{`<chr>` the gender that this row corresponds to}
+#'   \item{Population}{`<chr>` the socioeconomic group that this variable corresponds to}
+#' }
+"GLOSSARY_FOR_ACS_EMPLOYMENT"
